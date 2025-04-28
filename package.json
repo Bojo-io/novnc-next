@@ -1,0 +1,92 @@
+{
+  "name": "novnc-next",
+  "version": "1.0.0",
+  "description": "noVNC is a VNC client JavaScript library and application. This fork adds compatibility for environments like Next.js/SSR.",
+  "main": "lib/index.cjs.js",
+  "module": "lib/index.esm.js",
+  "exports": {
+    ".": {
+      "import": "./lib/index.esm.js",
+      "require": "./lib/index.cjs.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "browser": "lib/rfb",
+  "directories": {
+    "lib": "lib",
+    "doc": "docs",
+    "test": "tests"
+  },
+  "files": [
+    "lib",
+    "core",
+    "vendor",
+    "AUTHORS",
+    "VERSION",
+    "docs/API.md",
+    "docs/LIBRARY.md",
+    "docs/LICENSE*"
+  ],
+  "scripts": {
+    "lint": "eslint app core po/po2js po/xgettext-html tests utils",
+    "test": "karma start karma.conf.js",
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bojo-io/novnc-next.git"
+  },
+  "author": {
+    "name": "Justin Bojarski",
+    "url": "https://github.com/Bojo-io"
+  },
+  "contributors": [
+    "Samuel Mannehed <samuel@cendio.se> (https://github.com/samhed)",
+    "Pierre Ossman <ossman@cendio.se> (https://github.com/CendioOssman)"
+  ],
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/Bojo-io/novnc-next/issues"
+  },
+  "homepage": "https://github.com/Bojo-io/novnc-next#readme",
+  "devDependencies": {
+    "@babel/core": "latest",
+    "@babel/plugin-transform-runtime": "^7.24.7",
+    "@babel/preset-env": "latest",
+    "@chiragrupani/karma-chromium-edge-launcher": "latest",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^25.0.8",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "babel-plugin-import-redirect": "latest",
+    "browserify": "latest",
+    "chai": "latest",
+    "commander": "latest",
+    "eslint": "latest",
+    "fs-extra": "latest",
+    "globals": "latest",
+    "jsdom": "latest",
+    "karma": "latest",
+    "karma-chrome-launcher": "latest",
+    "karma-firefox-launcher": "latest",
+    "karma-ie-launcher": "latest",
+    "karma-mocha": "latest",
+    "karma-mocha-reporter": "latest",
+    "karma-safari-launcher": "latest",
+    "karma-script-launcher": "latest",
+    "mocha": "latest",
+    "pofile": "latest",
+    "rollup": "^4.18.0",
+    "sinon": "latest",
+    "sinon-chai": "latest"
+  },
+  "keywords": [
+    "vnc",
+    "rfb",
+    "novnc",
+    "websockify"
+  ],
+  "dependencies": {
+    "@babel/runtime": "^7.24.7"
+  }
+}
