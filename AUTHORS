@@ -1,6 +1,9 @@
 # NOTE: This file lists the authors and contributors to the original noVNC project.
-# The `novnc-next` fork is maintained by Justin Bojarski (@Bojo-io),
-# responsible for modifications primarily related to Next.js/SSR compatibility.
+
+The `novnc-next` fork is maintained by Justin Bojarski (@Bojo-io),
+responsible for modifications primarily related to Next.js/SSR compatibility.
+
+The following are the original authors for @novnc/novnc
 
 maintainers:
 - Samuel Mannehed for Cendio AB (@samhed)
