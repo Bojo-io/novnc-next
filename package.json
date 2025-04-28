@@ -28,7 +28,7 @@
     "docs/LICENSE*"
   ],
   "scripts": {
-    "lint": "eslint app core po/po2js po/xgettext-html tests utils",
+    "lint": "eslint app core po/po2js po/xgettext-html utils",
     "build": "rollup -c",
     "prepublishOnly": "npm run build"
   },
