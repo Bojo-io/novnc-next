@@ -282,15 +282,18 @@ or deploying the noVNC application in production environments:
 See [AUTHORS](AUTHORS) for a (full-ish) list of authors.  If you're not on
 that list and you think you should be, feel free to send a PR to fix that.
 
-* Core team:
+* novnc-next / @novnc/novnc fork team:
+    * [Justin Bojarski](https://github.com/Bojo-io)
+
+* @novnc/novnc core team:
     * [Samuel Mannehed](https://github.com/samhed) (Cendio)
     * [Pierre Ossman](https://github.com/CendioOssman) (Cendio)
 
-* Previous core contributors:
+* Previous @novnc/novnc core contributors:
     * [Joel Martin](https://github.com/kanaka) (Project founder)
     * [Solly Ross](https://github.com/DirectXMan12) (Red Hat / OpenStack)
 
-* Notable contributions:
+* Notable @novnc/novnc contributions:
     * UI and icons : Pierre Ossman, Chris Gordon
     * Original logo : Michael Sersen
     * tight encoding : Michael Tinglof (Mercuri.ca)
